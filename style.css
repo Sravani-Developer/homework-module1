@@ -18,7 +18,10 @@
          background: no-repeat lightgrey url(images/cliff_rock.jpg);
       background-size: 1500px;
     }
-    
+    #cliff header{
+           background: no-repeat lightgrey url(images/forest_cliff.jpg);
+      background-size: 1500px;
+    }
     .main-header{
       background-color: rgb(255,255,255,0.8);
       width: 700px;
@@ -326,5 +329,3 @@ form .button input[type="submit"]{
 form .button input[type="submit"]:hover{
   background:#3a68c4;
 }
-
-
