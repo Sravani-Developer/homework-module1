@@ -330,7 +330,7 @@ form .button input[type="submit"]:hover{
   background:#3a68c4;
 }
 
-/* ===== Cliffs page section ===== */
+
 #cliffs{
   max-width: 960px;
   margin: 0 auto;
@@ -387,5 +387,26 @@ form .button input[type="submit"]:hover{
 }
 
 
+#timeofday {
+  width: 100%;
+  text-align: center;                 
+  padding: 16px 0;                   
+  background: linear-gradient(
+    0deg,
+    rgba(251,215,139,1) 0%,
+    rgba(118,213,245,1) 100%
+  );
+  font-family: Arial, Helvetica, sans-serif;
 
+ 
+  border: none;
+}
+
+#timeofday span { display: inline; }
+
+#clock {
+  font-weight: 600;
+  color: #125688;                     
+  margin-left: 6px;                  
+}
 
