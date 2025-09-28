@@ -135,6 +135,24 @@ section #partners .partner img{
   width: 90px;
   height: 90px;
 }
+  .randomcode {
+      margin: 20px;
+      font-family: Arial, sans-serif;
+    }
+#codes{
+  display:inline-flex;        
+  flex:0 0 120px;             
+  height:36px;
+  align-items:center;
+  justify-content:center;
+  background:#d9d9d9;
+  color:#111;
+  border:1px solid #bfbfbf;
+  border-radius:2px;
+  font-weight:600;
+  letter-spacing:0.5px;
+  user-select:none;
+}
 
 /* Footer */
 footer {
@@ -316,13 +334,9 @@ form textarea:focus{
 }
 
 
-form .button{
-   margin-top:14px;
-   text-align:center;
-   }
-form .button input[type="submit"]
-{
-  background:#4977D1;                 
+form .button{ margin-top:14px; text-align:center; }
+form .button input[type="submit"]{
+  /*background:#4977D1;*/               
   color:#fff;
   border:0;
   padding:8px 20px;
