@@ -340,10 +340,9 @@ form textarea:focus {
 }
 
 form .button {
-  display: flex;
-  justify-content: flex-end;
-  margin-top: 14px;
-  text-align: center;
+  display: block;
+  margin: 20px 30px 20px auto;
+  width: fit-content;
 }
 form .button input[type="submit"] {
   /*background:#4977D1;*/

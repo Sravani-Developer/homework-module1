@@ -26,3 +26,8 @@
       }
     });
   })();
+
+var code = '';
+var getCode='';
+var btnValue='';
+var str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
