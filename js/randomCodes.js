@@ -13,7 +13,7 @@ function disableButton(btnvalue) {
     document.getElementById("submit").disabled = btnvalue;
 
     if (btnvalue == true) {
-      document.getElementById("submit").style.backgroundColor = "rgba(73, 119, 209, 0.3)";
+      document.getElementById("submit").style.backgroundColor = "rgba(75, 209, 73, 0.3)";
       document.getElementById("submit").style.color = "rgba(255, 255, 255, 0.5)";
     }
     else {

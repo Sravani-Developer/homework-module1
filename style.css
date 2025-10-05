@@ -153,25 +153,33 @@ section #partners .partner img {
 /* Footer */
 footer {
   width: 100%;
-  height: 155px;
-  padding-bottom: 1em;
   background-color: #ecfab8;
+  padding: 16px 0;
 }
 
-footer #nondisclaimer .copy {
-  padding: 3.5em 1.5em 3.5em 0.5em;
-  float: left;
-  font-size: 0.9em;
+footer #nondisclaimer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 16px 24px 8px;
 }
 
+/* remove float-based layout + huge paddings */
+footer #nondisclaimer .copy,
 footer #nondisclaimer .social {
-  padding: 2.5em;
-  margin-right: 9.25em;
-  float: right;
+  float: none;
+  padding: 0;
+  margin: 0;
 }
+
 footer #disclaimer {
-  clear: both;
+  /* no need to clear floats when using flex */
+  clear: none;
+  padding: 8px 24px 16px;
+  text-align: center;
 }
+
 
 footer #disclaimer p {
   font-size: 0.85em;
@@ -205,6 +213,49 @@ footer #nondisclaimer .social .fa-instagram {
   background: #125688;
   color: white;
 }
+
+/* title bar */
+#activities-table caption{
+  background:#7a2b1b;  /* maroon */
+  color:#fff;
+}
+
+/* header row across the top (West/North/East/South Cliff) */
+#activities-table thead th,
+#activities-table tr:first-child th{
+  background:#bde1ff;   /* light blue */
+  color:#1a2a3a;
+  font-weight:700;
+}
+
+/* body cells base color */
+#activities-table tbody td{
+  background:#eeffe6;   /* pale green */
+}
+
+/* selectable cells show hand cursor */
+#activities-table td.slot{ cursor:pointer; }
+
+/* selected highlight (bright green tile) */
+#activities-table td.selected{
+  background:#9ed034;
+  color:#fff;
+  font-weight:600;
+}
+
+/* not-available cells: muted and not clickable */
+#activities-table td.na{
+  cursor:not-allowed;
+  opacity:.45;
+}
+
+
+#activities-table tr:first-child th:first-child {
+  background: #00357b;   /* maroon, or whatever the preview shows */
+  color: #fff;
+}
+
+
 table {
   width: 1000px;
   margin: 4em auto 0 auto;
@@ -236,8 +287,8 @@ td {
 th:first-child {
   width: 125px;
   height: 50px;
-  background: #4977d1;
-  color: #fff;
+  background: #bde1ff;
+  color: #000000;
 }
 
 td:first-child {
@@ -434,3 +485,21 @@ form .button input[type="submit"]:hover {
   color: #125688;
   margin-left: 6px;
 }
+
+
+/* selectable cells show hand cursor */
+#activities-table td.slot { cursor: pointer; }
+
+/* selected highlight */
+#activities-table td.selected {
+  background: #9ed034;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* not-available cells look disabled */
+#activities-table td.na {
+  cursor: not-allowed;
+  opacity: 0.45;
+}
+
